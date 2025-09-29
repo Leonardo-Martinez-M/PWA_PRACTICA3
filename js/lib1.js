@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // 2. INICIALIZAR CANVAS Y BOTÓN
-    lienzo = document.getElementById("exhibir-lineas-btn");
+    lienzo = document.getElementById("line-canvas");
 
     if (lienzo) {
         cd = lienzo.getContext("2d");
