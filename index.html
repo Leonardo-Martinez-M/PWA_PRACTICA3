@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PWA PRACTICA 3</title>
+    
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body { padding: 20px; }
+        .content-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; align-items: start; }
+        .pie-chart { width: 200px; height: 200px; background-color: lightgray; border-radius: 50%; /* Esto es un placeholder, el JS/CSS real lo dibuja */ }
+        #line-canvas { border: 1px solid black; }
+    </style>
+  </head>
+  <body>
+
+    <h1>Hola PWA3</h1>
+
+    <div class="content-grid">
+        <div>
+            <img src="images/dino.jpg" alt="Dino PWA" style="width: 150px;">
+            <button id="exhibir-lineas-btn" class="btn btn-primary mt-3">Exhibir Líneas</button>
+        </div>
+
+        <div class="pie-chart d-flex align-items-center justify-content-center">
+            <p>Gráfico 1/5</p>
+        </div>
+
+        <canvas id="line-canvas" width="300" height="300"></canvas>
+    </div>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script async src="js/script.js"></script> 
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js').then(function(registration) {
+                console.log('ServiceWorker registration successful with scope:', registration.scope);
+            }).catch(function(err) {
+                console.log('ServiceWorker registration failed:', err);
+            });
+        }
+    </script>
+  </body>
+</html>
