@@ -1,5 +1,3 @@
-// js/script.js
-
 document.addEventListener('DOMContentLoaded', () => {
     console.log('El script de la aplicación se ha cargado.');
 

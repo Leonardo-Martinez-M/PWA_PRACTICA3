@@ -14,7 +14,8 @@ var filesToCache = [
   "/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js",
 
   // Archivos JS y CSS propios
-  "/js/script.js",
+  "/js/lib1.js",
+  "/js/lib2.js",
   //"/css/style.css",
 
   // Imágenes de la PWA
