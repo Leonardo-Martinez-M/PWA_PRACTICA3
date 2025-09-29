@@ -14,7 +14,7 @@ var filesToCache = [
 
   // Archivos JS y CSS propios
   "js/lib1.js",
-  "js/lib2.js",
+  //"js/lib2.js",
   //"/css/style.css",
 
   // Imágenes de la PWA
