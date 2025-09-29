@@ -6,21 +6,20 @@ var cacheName = "pwa3-cache-v2";
 // Lista de TODOS los archivos críticos que se deben cachear (incluyendo Bootstrap)
 var filesToCache = [
   // Raíz y HTML
-  "/",
   "index.html",
 
   // Archivos de Bootstrap (Asegúrate de que esta ruta sea correcta)
-  "/bootstrap-5.3.8-dist/css/bootstrap-grid.min.css",
-  "/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js",
+  "bootstrap-5.3.8-dist/css/bootstrap.min.css",
+  "bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js",
 
   // Archivos JS y CSS propios
-  "/js/lib1.js",
-  "/js/lib2.js",
+  "js/lib1.js",
+  "js/lib2.js",
   //"/css/style.css",
 
   // Imágenes de la PWA
-  "/images/Dino.jpg",
-  "/images/utp.png", // Si usas utp.png
+  "images/Dino.jpg",
+  "images/utp.png", // Si usas utp.png
 ];
 
 // Evento INSTALL: Precaching de recursos
